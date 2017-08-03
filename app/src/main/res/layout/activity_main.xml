@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/giphy"
     tools:context="com.sourabhkulkarni.connectthree.MainActivity">
 
     <GridLayout
@@ -129,15 +130,15 @@
     </GridLayout>
 
     <LinearLayout
-        android:orientation="vertical"
+        android:id="@+id/playAgainLayout"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="#fffaff0b"
-        android:padding="30dp"
-
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:id="@+id/playAgainLayout"
+        android:layout_centerVertical="true"
+
+        android:background="?attr/actionModeSplitBackground"
+        android:orientation="vertical"
+        android:padding="30dp"
         android:visibility="invisible">
 
 
@@ -153,14 +154,14 @@
             android:textSize="30sp" />
 
         <Button
-        android:id="@+id/playAgainButton"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:onClick="playAgain"
-        android:text="Play Again"
-        android:layout_below="@+id/winnerMessage"
-        android:layout_centerHorizontal="true" />
+            android:id="@+id/playAgainButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/winnerMessage"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal"
+            android:onClick="playAgain"
+            android:text="Play Again" />
 
     </LinearLayout>
 

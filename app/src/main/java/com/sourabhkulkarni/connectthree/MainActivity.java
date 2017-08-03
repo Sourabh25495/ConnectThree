@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                 active_player = 0;
 
             }
-            counter.animate().translationYBy(1000f).rotation(360).setDuration(800);
+            counter.animate().translationYBy(1000f).rotation(360).setDuration(1110);
             for(int[] winningPosition :winningPositions){
                 if (gameState[winningPosition[0]] == gameState[winningPosition[1]] &&
                         gameState[winningPosition[1]] == gameState[winningPosition[2]]&&

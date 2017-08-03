@@ -76,7 +76,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                             if(gameOver){
                                 TextView winnerMessage=(TextView)findViewById(R.id.winnerMessage);
-                                winnerMessage.setText("It's s Draw");
+                                winnerMessage.setText("It's a Draw");
                                 LinearLayout layout=(LinearLayout)findViewById(R.id.playAgainLayout);
                                 layout.setVisibility(View.VISIBLE);
 

@@ -50,7 +50,7 @@ public class MainActivity extends AppCompatActivity {
 
                     gameIsActive=false;
                     String winner="Red";
-                    if(gameState[winningPosition[0]]!=0){
+                    if(gameState[winningPosition[0]]==0){
                         winner="Yellow";
 
 
